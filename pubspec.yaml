@@ -17,3 +17,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/dado_1.png
+    - assets/dado_2.png
+    - assets/dado_3.png
+    - assets/dado_4.png
+    - assets/dado_5.png
+    - assets/dado_6.png
+
+    

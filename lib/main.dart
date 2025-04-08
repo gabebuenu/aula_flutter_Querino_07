@@ -37,7 +37,7 @@ class Dado extends StatefulWidget {
 }
 
 class _Dado extends State<Dado> {
-  int _numeroSorteado = -1;
+  int _numeroSorteado = 1;
 
   void rolarDado() {
     setState(() {
@@ -51,7 +51,11 @@ class _Dado extends State<Dado> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-       Text("$_numeroSorteado", style: TextStyle(fontSize: 64)),
+      //  Text("$_numeroSorteado", style: TextStyle(fontSize: 64)),
+      Image.asset(
+        "assets/dado/_$_numeroSorteado.png",
+        width: 400,
+      ),
        SizedBox(height: 50),
         ElevatedButton.icon(
           onPressed: () {
